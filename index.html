@@ -23,17 +23,24 @@
 
     <header class="header">
         <nav class="navbar container">
-            <a><img class="logoUm" src="assets/marca_rocha_e_almeida_01.png" alt=""></a>
-            <ul class="nav-menu">
+            <a href="#">
+                <img class="logoUm" src="assets/marca_rocha_e_almeida_01.png" alt="Logo Rocha & Almeida Advocacia">
+            </a>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#boas-vindas">O Escritório</a></li>
                 <li><a href="#essencia">Essência</a></li>
                 <li><a href="#atuacao">Áreas de Atuação</a></li>
                 <li><a href="#time">Nosso Time</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
         </nav>
     </header>
 
@@ -49,44 +56,51 @@
             </div>
         </section>
 
-        <section id="boas-vindas" class="section container">
-            <h2 class="section-title">O Escritório Rocha & Almeida</h2>
-            <div class="boas-vindas-content fade-in">
-                <p>Localizado na cidade de Dourados, Mato Grosso do Sul, o escritório Rocha & Almeida Advocacia e
-                    Assessória Jurídica se destaca pela especialização em Direito Civil, Empresarial, e Tributário,
-                    oferecendo serviços jurídicos personalizados e voltados para as necessidades empresariais e
-                    individuais.</p>
-                <p>Com uma equipe de advogados altamente capacitados, buscamos proporcionar soluções jurídicas
-                    inovadoras, através do desenvolvimento de estratégias eficientes para nossos clientes, seja no
-                    aspecto consultivo ou contencioso.</p>
+        <section id="boas-vindas" class="section">
+            <div class="container">
+                <h2 class="section-title">O Escritório Rocha & Almeida</h2>
+                <div class="boas-vindas-content fade-in">
+                    <p>Localizado na cidade de Dourados, Mato Grosso do Sul, o escritório Rocha & Almeida Advocacia e
+                        Assessória Jurídica se destaca pela especialização em Direito Civil, Empresarial, e Tributário,
+                        oferecendo serviços jurídicos personalizados e voltados para as necessidades empresariais e
+                        individuais.</p>
+                    <p>Com uma equipe de advogados altamente capacitados, buscamos proporcionar soluções jurídicas
+                        inovadoras, através do desenvolvimento de estratégias eficientes para nossos clientes, seja no
+                        aspecto consultivo ou contencioso.</p>
+                </div>
             </div>
         </section>
 
-        <section id="essencia" class="section section-bg">
-            <h2 class="section-title">Nossa Essência e Propósito</h2>
-            <div class="essencia-grid">
-                <div class="essencia-card fade-in">
-                    <i class="fas fa-bullseye"></i>
-                    <h3>Nosso Objetivo</h3>
-                    <p>Está voltado para solucionar conflitos e, principalmente, preveni-los.</p>
-                </div>
-                <div class="essencia-card fade-in">
-                    <i class="fas fa-balance-scale"></i>
-                    <h3>Nossa Atuação</h3>
-                    <p>Ocorre de forma a promover clareza e resguardo de direitos e obrigações, nas relações comerciais
-                        ou pessoais de nossos clientes.</p>
-                </div>
-                <div class="essencia-card fade-in">
-                    <i class="fas fa-eye"></i>
-                    <h3>Nossa Visão</h3>
-                    <p>É nos mantermos como referência no segmento jurídico, sendo sempre reconhecidas pela excelência e
-                        seriedade.</p>
-                </div>
-                <div class="essencia-card fade-in">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Nossa Missão</h3>
-                    <p>Prestar serviços jurídicos com excelência, buscando resultados inovadores que possam proporcionar
-                        benefícios expressivos aos nossos clientes.</p>
+        <section id="essencia" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Nossa Essência e Propósito</h2>
+                <div class="essencia-grid">
+                    <div class="essencia-card fade-in">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Nosso Objetivo</h3>
+                        <p>Está voltado para solucionar conflitos e, principalmente, preveni-los.</p>
+                    </div>
+                    <div class="essencia-card fade-in">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Nossa Atuação</h3>
+                        <p>Ocorre de forma a promover clareza e resguardo de direitos e obrigações, nas relações
+                            comerciais
+                            ou pessoais de nossos clientes.</p>
+                    </div>
+                    <div class="essencia-card fade-in">
+                        <i class="fas fa-eye"></i>
+                        <h3>Nossa Visão</h3>
+                        <p>É nos mantermos como referência no segmento jurídico, sendo sempre reconhecidas pela
+                            excelência e
+                            seriedade.</p>
+                    </div>
+                    <div class="essencia-card fade-in">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Nossa Missão</h3>
+                        <p>Prestar serviços jurídicos com excelência, buscando resultados inovadores que possam
+                            proporcionar
+                            benefícios expressivos aos nossos clientes.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -111,7 +125,7 @@
             </div>
         </section>
 
-        <section id="time" class="section section-bg">
+        <section id="time" class="section section-dark">
             <div class="container">
                 <h2 class="section-title">Conheça Nosso Time</h2>
                 <div class="time-grid">
@@ -152,26 +166,26 @@
                 <h2 class="section-title">Nossos Parceiros</h2>
                 <div class="parceiros-grid">
                     <div class="parceiro-card fade-in">
-                        <a href="https://lasproconsultores.com.br/home">
+                        <a href="https://lasproconsultores.com.br/home" target="_blank" rel="noopener noreferrer">
                             <img src="assets/parceiros/laspro.png" alt="Logo do parceiro de Recuperação Judicial">
                         </a>
                         <h4>Especializado em Recuperação Judicial e Falência</h4>
                     </div>
-                    <div class="parceiro-card fade-in">
-                        <a href="https://sachacalmon-sp.com.br/">
+                    <div class="parceiro-card fade-in sacha-section">
+                        <a href="https://sachacalmon-sp.com.br/" target="_blank" rel="noopener noreferrer">
                             <img src="assets/parceiros/sacha.png" alt="Logo do parceiro de Direito Tributário">
                         </a>
                         <h4>Especializado em Direito Tributário</h4>
                     </div>
                     <div class="parceiro-card fade-in">
-                        <a href="http://www.barrosolagoin.adv.br/">
+                        <a href="http://www.barrosolagoin.adv.br/" target="_blank" rel="noopener noreferrer">
                             <img src="assets/parceiros/barroso2.png"
                                 alt="Logo do parceiro Escritório de diversas áreas">
                         </a>
                         <h4>Escritório especializado nas diversas áreas do Direito</h4>
                     </div>
                     <div class="parceiro-card fade-in">
-                        <a href="https://www.conthcontabilidade.com/">
+                        <a href="https://www.conthcontabilidade.com/" target="_blank" rel="noopener noreferrer">
                             <img src="assets/parceiros/conth.png" alt="Logo do parceiro Escritório de Contabilidade">
                         </a>
                         <h4>Escritório de Contabilidade</h4>
@@ -180,7 +194,7 @@
             </div>
         </section>
 
-        <section id="contato" class="section section-bg">
+        <section id="contato" class="section section-dark">
             <div class="container">
                 <h2 class="section-title">Contato e Localização</h2>
                 <div class="contato-grid">
@@ -188,12 +202,12 @@
                         <h3>Rocha & Almeida Advocacia</h3>
                         <p><i class="fas fa-map-marker-alt"></i> Rua Ciro Melo, n. 1.020, Sala A, Jd. América, Dourados
                             – MS, CEP: 79.805-030</p>
-                        <p><i class="fas fa-envelope"></i> <strong>Geral: </strong> &nbsp;&nbsp;
+                        <p><i class="fas fa-envelope"></i> <strong>Geral: </strong>&nbsp;
                             <a href="mailto:escritorio@rochaealmeidaadv.com">escritorio@rochaealmeidaadv.com</a>
                         </p>
-                        <p><i class="fas fa-user-tie"></i> <strong>Dra. Anna Flávia:</strong>&nbsp;&nbsp; <a
+                        <p><i class="fas fa-user-tie"></i> <strong>Dra. Anna Flávia:</strong>&nbsp; <a
                                 href="mailto:annaflaviadv@gmail.com">annaflavia@rochaalmeidaadv.com</a></p>
-                        <p><i class="fas fa-user-tie"></i> <strong>Dra. Queila:</strong>&nbsp;&nbsp; <a
+                        <p><i class="fas fa-user-tie"></i> <strong>Dra. Queila:</strong>&nbsp; <a
                                 href="mailto:queilaadv@gmail.com">queilaalmeida@rochaalmeidaadv.com</a></p>
                         <p><i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=556796555501"
                                 target="_blank">+55 67 9655-5501</a></p>
@@ -203,7 +217,7 @@
                     </div>
                     <div class="contato-mapa fade-in">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.6706079963244!2d-54.8116041243163!3d-22.285880479707255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94824e4d7e269f8b%3A0x6a1a4c9d9d300d11!2sR.+Ciro+Melo%2C+1020+-+Jardim+America%2C+Dourados+-+MS%2C+79805-030!5e0!3m2!1spt-BR!2sbr!4v1709141065183!5m2!1spt-BR!2sbr"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.513470732891!2d-54.8184516850586!3d-22.22095998528406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9489a85a4a5d89a9%3A0x6d9f8e81881b7e44!2sRua%20Ciro%20Melo%2C%201020%20-%20Jardim%20America%2C%20Dourados%20-%20MS%2C%2079805-030!5e0!3m2!1spt-BR!2sbr!4v1678886912345!5m2!1spt-BR!2sbr"
                             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -214,12 +228,13 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="primeira">© 2025 Rocha & Almeida Advocacia. Todos os direitos reservados.</p>
+            <p class="primeira">© 2024 Rocha & Almeida Advocacia. Todos os direitos reservados.</p>
             <p class="segunda">Desenvolvido com excelência pela Agência CodeClick.</p>
         </div>
     </footer>
 
-    <a href="https://api.whatsapp.com/send?phone=556796555501" class="whatsapp-float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=556796555501" class="whatsapp-float" target="_blank"
+        aria-label="Fale conosco pelo WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
