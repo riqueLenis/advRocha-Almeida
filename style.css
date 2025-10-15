@@ -23,18 +23,8 @@
     --transition: all 0.3s ease-in-out;
 
     /* Fontes */
-    --font-primary: 'Roxborough CF', serif;
-    --font-secondary: 'Roxborough CF', serif;
-}
-
-@font-face {
-    font-family: 'Roxborough CF';
-    src: url('/fonts/roxborough-cf.woff2') format('woff2'),
-        url('/fonts/roxborough-cf.woff') format('woff'),
-        url('/fonts/roxborough-cf.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    --font-primary: 'Cinzel', serif;
+    --font-secondary: 'Cinzel', serif;
 }
 
 
@@ -507,6 +497,7 @@ body::before {
     font-size: 1.1rem;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .contato-info p a {
@@ -591,7 +582,7 @@ body::before {
         );
 }*/
 
-/* ---------------------- RESPONSIVIDADE ---------------------- */
+/*RESPONSIVIDADE*/
 
 @media (max-width: 1024px) {
     .container {
@@ -719,10 +710,80 @@ body::before {
     }
 }
 
+@media (max-width: 768px) {
+
+    .essencia-card,
+    .atuacao-card,
+    .time-card,
+    .parceiro-card {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .time-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .time-card span,
+    .time-card p {
+        font-size: 0.9rem;
+    }
+
+    .time-card small {
+        font-size: 0.8rem;
+        line-height: 1.4;
+        display: block;
+        word-wrap: break-word;
+        hyphens: auto;
+        text-align: left;
+        margin-top: var(--spacing-xs);
+    }
+
+    .time-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .essencia-card,
+    .atuacao-card,
+    .time-card,
+    .parceiro-card {
+        padding: var(--spacing-md);
+    }
+
+    .time-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .time-card small {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+}
+
 @media (max-width: 480px) {
     .container {
         padding-left: var(--spacing-md);
         padding-right: var(--spacing-md);
+    }
+
+    .contato-info p {
+        font-size: 0.8rem;
+    }
+
+    .contato-info p {
+        font-size: 0.95rem;
+        white-space: normal;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .contato-info i {
+        margin-right: var(--spacing-sm);
+        font-size: 1.1rem;
     }
 
     .hero h1 {
@@ -741,5 +802,113 @@ body::before {
 
     .section {
         padding: var(--spacing-lg) 0;
+    }
+}
+
+/*atuacao*/
+.atuacao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.assessoria-grid {
+    background: rgba(184, 158, 120, 0.05);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.assessoria-subtitle {
+    font-size: 1.3rem;
+    color: var(--accent-gold);
+    margin-bottom: var(--spacing-sm);
+    font-family: var(--font-primary);
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-sm);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.servico-card {
+    background: var(--white-color);
+    padding: var(--spacing-sm);
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--border-radius);
+    font-size: 0.95rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+.servico-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-gold);
+}
+
+@media (max-width: 768px) {
+
+    .atuacao-grid,
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .assessoria-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .time-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 var(--spacing-xs);
+    }
+
+    .essencia-card,
+    .atuacao-card,
+    .time-card,
+    .parceiro-card {
+        padding: var(--spacing-xs);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .time-card h3 {
+        font-size: 1rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .time-card span,
+    .time-card p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .time-card small {
+        font-size: 0.75rem;
+        line-height: 1.5;
+        display: block;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        text-align: left;
+        margin-top: var(--spacing-xs);
+        padding: 0 var(--spacing-xs);
+    }
+
+    .time-card img {
+        max-width: 100%;
+        height: auto;
+        width: 120px;
+        margin: 0 auto var(--spacing-sm);
     }
 }

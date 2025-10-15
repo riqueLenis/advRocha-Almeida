@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active'); // anima o botão hambúrguer
-            document.body.classList.toggle('menu-open'); // trava/destrava o scroll
+            navToggle.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
         });
     }
 
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
-                document.body.classList.remove('menu-open'); // destrava scroll ao clicar
+                document.body.classList.remove('menu-open');
             }
         });
     });
