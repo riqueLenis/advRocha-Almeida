@@ -99,7 +99,7 @@ body {
 
 .btn-primary-whats {
   display: inline-block;
-  background-color: #25d366;
+  background-color: #fef9e7;
   color: var(--text-on-light);
   padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: var(--border-radius);
@@ -118,8 +118,8 @@ body {
 }
 
 .btn-primary-whats:hover {
-  background: #128c7e;
-  color: var(--text-on-light);
+  background: #a68a5e;
+  color: #ffffff;
   transform: translateY(-1px);
 }
 
