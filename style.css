@@ -99,8 +99,8 @@ body {
 
 .btn-primary-whats {
   display: inline-block;
-  background-color: #fef9e7;
-  color: var(--text-on-light);
+  background: var(--accent-green);
+  color: var(--white-color);
   padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: var(--border-radius);
   text-decoration: none;
@@ -111,16 +111,25 @@ body {
   transition: var(--transition);
   border: none;
   cursor: pointer;
-  margin-top: var(--spacing-md);
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
 }
 
 .btn-primary-whats:hover {
-  background: #a68a5e;
-  color: #ffffff;
-  transform: translateY(-1px);
+   background: #9b968f;
+}
+
+.btn-primary-whats:hover i,
+.btn-primary-whats:hover .fa-whatsapp,
+.btn-primary-whats:hover .fab,
+.btn-primary-whats:hover .svg-inline--fa {
+  color: #e0c59f !important;
+}
+
+
+.btn-primary-whats i,
+.btn-primary-whats .fa-whatsapp,
+.btn-primary-whats .fab,
+.btn-primary-whats .svg-inline--fa {
+  color: #323131 !important;
 }
 
 .btn-primary:hover {
