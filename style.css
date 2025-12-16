@@ -775,7 +775,8 @@ body {
 
 .colaboradoras-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  justify-items: center;
   gap: var(--spacing-lg);
 }
 
@@ -783,11 +784,11 @@ body {
   flex: none;
   max-width: 400px;
   display: flex;
-  flex-direction: column; /* Garante fluxo vertical centralizado */
+  flex-direction: column;
 }
 
 .colaboradoras-grid .team-card {
-  max-width: none;
+  max-width: 460px;
 }
 
 .team-card {
@@ -875,6 +876,7 @@ body {
   .colaboradoras-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
+    justify-items: center; /* mantém centralizado também no mobile */
   }
 
   .socias-row .team-card {
