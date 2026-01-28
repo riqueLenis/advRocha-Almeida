@@ -114,7 +114,7 @@ body {
 }
 
 .btn-primary-whats:hover {
-   background: #9b968f;
+  background: #9b968f;
 }
 
 .btn-primary-whats:hover i,
@@ -123,7 +123,6 @@ body {
 .btn-primary-whats:hover .svg-inline--fa {
   color: #e0c59f !important;
 }
-
 
 .btn-primary-whats i,
 .btn-primary-whats .fa-whatsapp,
@@ -548,7 +547,7 @@ body {
   margin-top: -50px;
 }
 
-.experience-stats .section-title{
+.experience-stats .section-title {
   position: relative;
   top: 50px;
   margin-top: 50px;
@@ -604,7 +603,9 @@ body {
 
 .experience-stats img:hover {
   transform: scale(1.02) translateX(0);
-  box-shadow: var(--shadow-lg), 0 0 20px rgba(210, 180, 140, 0.2);
+  box-shadow:
+    var(--shadow-lg),
+    0 0 20px rgba(210, 180, 140, 0.2);
 }
 
 @keyframes slideInRight {
@@ -679,7 +680,9 @@ body {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .essencia-card:hover {
@@ -775,9 +778,10 @@ body {
 
 .colaboradoras-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-lg);
+  justify-items: center;
+  width: 100%;
 }
 
 .socias-row .team-card {
@@ -876,12 +880,12 @@ body {
   .colaboradoras-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
-    justify-items: center; /* mantém centralizado também no mobile */
+    justify-items: center;
   }
 
   .socias-row .team-card {
     max-width: 100%;
-    min-height: 450px; /* Ajusta altura em mobile */
+    min-height: 450px;
   }
 
   .socias-row .team-card img {
@@ -1214,7 +1218,9 @@ body {
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .fade-in.visible {
@@ -1244,7 +1250,9 @@ body {
   background-color: rgba(24, 24, 24, 0.95);
   box-shadow: var(--shadow-md);
   backdrop-filter: blur(6px);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* MENU MOBILE ANIMADO */
